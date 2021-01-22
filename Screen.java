@@ -183,9 +183,9 @@ import javax.swing.Timer;
             int ok = 0;
             int rx = 0;
             int ry = 0;
-            while (ok != 15) {
-                rx = (int) (rand.nextInt(750) + 1);
-                ry = (int) (rand.nextInt(750) + 1);
+            while (ok != 30) {
+                rx = (int) (rand.nextInt(690) + 1);
+                ry = (int) (rand.nextInt(690) + 1);
 
                 if ((rx % 10) == 0 && (ry % 10) == 0) {
                     k = new Obstacle(rx, ry);
@@ -194,7 +194,7 @@ import javax.swing.Timer;
 
                     int r = (int) (rand.nextInt(2) + 1);
 
-                    for (int i = 0; i < 20; i++) {
+                    for (int i = 0; i < 10; i++) {
 
                         if (r == 1) {
                             k = new Obstacle(rx + temp , ry);
